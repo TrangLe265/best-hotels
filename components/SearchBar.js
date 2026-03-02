@@ -7,9 +7,9 @@ export default function SearchBar({
   onChangeText,
 }) {
   return (
-    <View style={[styles.searchWrapper]}>
+    <View style={styles.searchWrapper}>
       <TextInput
-        style={[styles.searchInput]}
+        style={styles.searchInput}
         placeholder="Hae kohteen tai hotellin nimellä"
         placeholderTextColor='#28000041'
         value={value}

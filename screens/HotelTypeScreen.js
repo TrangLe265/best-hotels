@@ -6,6 +6,7 @@ import hotelCategories from '../data/hoteltcategory.json';
 
 // Display hotels of a selected category
 export default function HotelTypeScreen({ route, navigation }) {
+
   const { keyword } = route.params; //Original | Solo | Break | Heymo
   //search for hotels whose names contain the keyword
   const hotels = hotelsData.data.hotels.filter(h => h.name.toLowerCase().includes(keyword.toLowerCase()));
@@ -13,7 +14,7 @@ export default function HotelTypeScreen({ route, navigation }) {
   return (
     <View style = {styles.container}>
       <View style={styles.section}>
-          <Text style={styles.sectionTitle}>About</Text>
+          <Text style={styles.sectionTitle}>Tietoa</Text>
           <View style={styles.divider} />
           <Text style={styles.desc}>{hotelCategories[keyword].description}</Text>
       </View>
@@ -24,7 +25,9 @@ export default function HotelTypeScreen({ route, navigation }) {
         data={hotels}
         keyExtractor={item => item.id}
         ListEmptyComponent={
-          <Text style={styles.empty}>No hotels found of this category.</Text>
+          <Text style={styles.empty}>
+            “Ei hotelleja löytynyt tästä kategoriasta.”
+          </Text>
         }
         renderItem={({ item }) => (
           <HotelCardSmall hotel={item} navigation={navigation} fullWidth />
@@ -36,10 +39,6 @@ export default function HotelTypeScreen({ route, navigation }) {
 }
 
 const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    backgroundColor: '#e7f3fb',
-  },
   section: {
     paddingHorizontal: 20,
     paddingTop: 24,

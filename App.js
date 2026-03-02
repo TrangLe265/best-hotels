@@ -24,12 +24,20 @@ export default function App() {
         <Stack.Screen
           name="HotelType"
           component={HotelTypeScreen}
-          options={({ route }) => ({ title: route.params.name })}
+          options={{
+              title: '',                 // no title
+              headerBackTitleVisible: false, 
+              headerTintColor: '#D64933', // back button color
+            }}
         />
         <Stack.Screen
           name="Hotel"
           component={HotelScreen}
-          options={({ route }) => ({ title: `Hotel's ID ${route.params.id}` })}
+          options={{
+            title: '',                 // no title
+            headerBackTitleVisible: false, 
+            headerTintColor: '#D64933', // back button color
+          }}
         />
         <Stack.Screen
           name="AllHotels"
