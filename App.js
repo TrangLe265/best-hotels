@@ -2,7 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen';
-import CityHotelsScreen from './screens/CityHotelsScreen';
+import HotelTypeScreen from './screens/HotelTypeScreen';
 import AllHotelsScreen from './screens/AllHotelsScreen';
 import HotelScreen from './screens/HotelScreen';
 
@@ -22,9 +22,9 @@ export default function App() {
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="CityHotels"
-          component={CityHotelsScreen}
-          options={({ route }) => ({ title: `Hotels in ${route.params.city}` })}
+          name="HotelType"
+          component={HotelTypeScreen}
+          options={({ route }) => ({ title: route.params.name })}
         />
         <Stack.Screen
           name="Hotel"
