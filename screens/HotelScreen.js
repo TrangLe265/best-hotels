@@ -1,16 +1,8 @@
 import React from 'react';
-import { Text, StyleSheet, ScrollView, Image, View } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
+import { Text, StyleSheet, ScrollView, View } from 'react-native';
 import hotelsData from '../data/hoteldata.json';
+import cityData from '../data/citydata.json';
 import HotelCardHero from '../components/HotelCardHero';
-
-const THINGS_TO_DO = [
-  { id: '1', emoji: '🏛️', name: 'Museum Tour',       desc: 'Explore local history and art at nearby museums.' },
-  { id: '2', emoji: '🛶', name: 'Waterfront Walk',    desc: 'Stroll along the scenic harbour and lakeside paths.' },
-  { id: '3', emoji: '🧖', name: 'Sauna Experience',   desc: 'Unwind in a traditional Finnish sauna.' },
-  { id: '4', emoji: '🛍️', name: 'Local Market',       desc: 'Browse fresh produce and handmade goods at the market square.' },
-  { id: '5', emoji: '🍽️', name: 'Taste Local Cuisine', desc: 'Try regional dishes at highly-rated neighbourhood restaurants.' },
-];
 
 export default function HotelScreen({ route }) {
   const { id } = route.params;
@@ -20,7 +12,7 @@ export default function HotelScreen({ route }) {
     return <Text style={styles.empty}>Hotel not found.</Text>;
   }
 
-  const address = `${hotel.address.street}, ${hotel.address.postcode}`;
+  const cityActivities = cityData[hotel.address.city] || [];
 
   return (
     <ScrollView style={styles.screen} showsVerticalScrollIndicator={false}>
@@ -40,10 +32,10 @@ export default function HotelScreen({ route }) {
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Things To Do in {hotel.address.city}</Text>
 
-        {THINGS_TO_DO.map(item => (
+        {cityActivities.map((item) => (
           <View key={item.id} style={styles.activityCard}>
             <View style={styles.activityIcon}>
-              <Text style={styles.activityEmoji}>{item.emoji}</Text>
+              <Text style={styles.activityEmoji}>{item.emoji || '📍'}</Text>
             </View>
             <View style={styles.activityInfo}>
               <Text style={styles.activityName}>{item.name}</Text>
@@ -51,6 +43,10 @@ export default function HotelScreen({ route }) {
             </View>
           </View>
         ))}
+
+        {cityActivities.length === 0 && (
+          <Text style={styles.activityDesc}>No activities available for this city yet.</Text>
+        )}
       </View>
 
       <View style={{ height: 40 }} />
