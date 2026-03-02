@@ -1,0 +1,1006 @@
+{
+    "data": {
+        "hotels": [
+            {
+                "id": "HELTOR",
+                "locale": "fi_FI",
+                "name": "Solo Sokos Hotel Torni",
+                "address": {
+                    "city": "Helsinki",
+                    "postcode": "00100",
+                    "street": "Yrjönkatu 26"
+                },
+                "salesDescription": "Solo Sokos Hotel Torni on unohtumaton hotellielämys Helsingin keskustassa, täynnä taidetta ja historiallisia hetkiä.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/EqdtsoNK44d99OZXn_7HmF.webp",
+                "urlPath": "/hotellit/helsinki/solo-sokos-hotel-torni",
+                "notifications": []
+            },
+            {
+                "id": "HELHEL",
+                "locale": "fi_FI",
+                "name": "Solo Sokos Hotel Helsinki",
+                "address": {
+                    "city": "Helsinki",
+                    "postcode": "00100",
+                    "street": "Kluuvikatu 8"
+                },
+                "salesDescription": "Solo Sokos Hotel Helsinki on ihana kaupunkihotelli loistavalla sijainnilla Helsingin sydämessä.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/E2ntj-w2KKhAxjhmm98-xi.webp",
+                "urlPath": "/hotellit/helsinki/solo-sokos-hotel-helsinki",
+                "notifications": []
+            },
+            {
+                "id": "HELPIE",
+                "locale": "fi_FI",
+                "name": "Solo Sokos Hotel Pier 4",
+                "address": {
+                    "city": "Helsinki",
+                    "postcode": "00160",
+                    "street": "Katajanokanlaituri 4"
+                },
+                "salesDescription": "Uusi Solo Sokos Hotel Pier 4 sijaitsee Helsingin valovoimaisimmalla paikalla Katajanokan rannassa.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/0EZtLjfEKv1935l0GXEOZV.webp",
+                "urlPath": "/hotellit/helsinki/solo-sokos-hotel-pier-4",
+                "notifications": []
+            },
+            {
+                "id": "HELPRE",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Presidentti",
+                "address": {
+                    "city": "Helsinki",
+                    "postcode": "00100",
+                    "street": "Eteläinen Rautatiekatu 4"
+                },
+                "salesDescription": "Original Sokos Hotel Presidentti on monipuolinen suosikkihotelli keskellä Helsinkiä.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/CsaN687xKXw9oxvmYMKpyt.webp",
+                "urlPath": "/hotellit/helsinki/original-sokos-hotel-presidentti",
+                "notifications": []
+            },
+            {
+                "id": "HELVAA",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Vaakuna, Helsinki",
+                "address": {
+                    "city": "Helsinki",
+                    "postcode": "00100",
+                    "street": "Asema-Aukio 2"
+                },
+                "salesDescription": "Original Sokos Hotel Vaakuna on tyylikäs klassikkohotelli Helsingin parhaalla paikalla.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/B4v6SWNEabA9CD_btKScwa.webp",
+                "urlPath": "/hotellit/helsinki/original-sokos-hotel-vaakuna",
+                "notifications": []
+            },
+            {
+                "id": "HELTRI",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Tripla",
+                "address": {
+                    "city": "Helsinki",
+                    "postcode": "00520",
+                    "street": "Fredikanterassi 1 B"
+                },
+                "salesDescription": "Kauppakeskuksessa sijaitseva Original Sokos Hotel Tripla tarjoaa paljon nähtävää ja koettavaa.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/1ESgYwNA40n8SbYZyqvmd6.webp",
+                "urlPath": "/hotellit/helsinki/original-sokos-hotel-tripla",
+                "notifications": []
+            },
+            {
+                "id": "HELALB",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Albert",
+                "address": {
+                    "city": "Helsinki",
+                    "postcode": "00120",
+                    "street": "Albertinkatu 30"
+                },
+                "salesDescription": "Original Sokos Hotel Albert on pieni ja mutkaton hotelli Helsingin trendialueella.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/66W5YUWaad18ZAy8-aie0Z.webp",
+                "urlPath": "/hotellit/helsinki/original-sokos-hotel-albert",
+                "notifications": []
+            },
+            {
+                "id": "SALRIK",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Rikala",
+                "address": {
+                    "city": "Salo",
+                    "postcode": "24100",
+                    "street": "Asemakatu 15"
+                },
+                "salesDescription": "Original Sokos Hotel Rikala on rento kaupunkihotelli joen rannalla Salon ydinkeskustassa.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/9LWE73KUKZOB4vvMwztsab.webp",
+                "urlPath": "/hotellit/salo/original-sokos-hotel-rikala",
+                "notifications": []
+            },
+            {
+                "id": "KAJVAL",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Valjus",
+                "address": {
+                    "city": "Kajaani",
+                    "postcode": "87100",
+                    "street": "Kauppakatu 20"
+                },
+                "salesDescription": "Original Sokos Hotel Valjus on mutkatonta kainuulaista vieraanvaraisuutta Kajaanin keskustan palveluiden äärellä.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/84EDqW38aIH9scCKKS39N1.webp",
+                "urlPath": "/hotellit/kajaani/original-sokos-hotel-valjus",
+                "notifications": []
+            },
+            {
+                "id": "ESPTAP",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Tapiola Garden",
+                "address": {
+                    "city": "Espoo",
+                    "postcode": "02100",
+                    "street": "Tapionaukio 3"
+                },
+                "salesDescription": "Original Sokos Hotel Tapiola Garden on viehättävä kohtaamispaikka Tapiolan puutarhakaupunginosan sydämessä.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/51cwc-6Pq4s9DD6YBYiueN.webp",
+                "urlPath": "/hotellit/espoo/original-sokos-hotel-tapiola-garden",
+                "notifications": [
+                    {
+                        "text": "Tapiolan uimahallin remontti saattaa aiheuttaa päivisin hieman melua ja voi vaikuttaa keskusaltaan alueen toimintoihin.",
+                        "link": {
+                            "url": "",
+                            "text": ""
+                        },
+                        "visible": false
+                    }
+                ]
+            },
+            {
+                "id": "TURCIT",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Wiklund",
+                "address": {
+                    "city": "Turku",
+                    "postcode": "20100",
+                    "street": "Eerikinkatu 11"
+                },
+                "salesDescription": "Original Sokos Hotel Wiklund on kiehtova turkulainen, sun paras kaveri Turus. Keskellä upeaa kaupunkielämää Kauppatorin laidalla.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/AJGINqmdKKX81mvoz9XB_Q.webp",
+                "urlPath": "/hotellit/turku/original-sokos-hotel-wiklund",
+                "notifications": [
+                    {
+                        "text": "Pysäköinti Wiklund Europark on suljettu \n 22.2. klo 20.00 - 27.2. klo 20.00. Turun Toriparkki palvelee normaalisti.",
+                        "link": {
+                            "url": "",
+                            "text": ""
+                        },
+                        "visible": true
+                    },
+                    {
+                        "text": "Uudistamme Wiklund- keskusta ja rakennamme uusia palveluja saman katon alle. Pahoittelemme tästä aiheutuvaa häiriötä. \n",
+                        "link": {
+                            "url": "https://www.wiklundturku.fi/wiklund-uudistuu/",
+                            "text": "Wiklund uudistuu"
+                        },
+                        "visible": true
+                    },
+                    {
+                        "text": "Hotellimme on mukana opiskelijatapahtumassa 26.2.2026",
+                        "link": {
+                            "url": "https://www.pikkulaskiainen.fi/",
+                            "text": "Pikkulaskiainen"
+                        },
+                        "visible": true
+                    }
+                ]
+            },
+            {
+                "id": "VAAROY",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Royal",
+                "address": {
+                    "city": "Vaasa",
+                    "postcode": "65100",
+                    "street": "Hovioikeudenpuistikko 18"
+                },
+                "salesDescription": "Hulppea atrium-aula, kattosauna, aurinkoiset huoneet ja monipuoliset ravintolat: tiedossa on maakunnan mielenkiintoisin hotellikokonaisuus!",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/BAdEiP28KJ98wYD8yFGsu0.webp",
+                "urlPath": "/hotellit/vaasa/original-sokos-hotel-royal-vaasa",
+                "notifications": []
+            },
+            {
+                "id": "TAMVIL",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Villa",
+                "address": {
+                    "city": "Tampere",
+                    "postcode": "33100",
+                    "street": "Sumeliuksenkatu 14"
+                },
+                "salesDescription": "Original Sokos Hotel Villa on tunnelmallinen hotelli vanhassa viljamakasiinissa Tampereen sydämessä.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/4UGG0ezwqZl9wsmU6DevlU.webp",
+                "urlPath": "/hotellit/tampere/original-sokos-hotel-villa",
+                "notifications": []
+            },
+            {
+                "id": "MIKVAA",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Vaakuna, Mikkeli",
+                "address": {
+                    "city": "Mikkeli",
+                    "postcode": "50100",
+                    "street": "Porrassalmenkatu 9"
+                },
+                "salesDescription": "Original Sokos Hotel Vaakuna on Mikkelin ykköshotelli, joka on tunnettu sydämellisestä henkilökunnasta ja leppoisasta tunnelmastaan.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/2vMcebTTK2PBlyJi3V52h_.webp",
+                "urlPath": "/hotellit/mikkeli/original-sokos-hotel-vaakuna",
+                "notifications": [
+                    {
+                        "text": "Hotellin aulaa uudistetaan viikkojen 9 - 10 aikana, työstä saattaa aiheutua pientä häiriötä klo 9-16 välillä.",
+                        "link": {
+                            "url": "",
+                            "text": ""
+                        },
+                        "visible": true
+                    }
+                ]
+            },
+            {
+                "id": "TAHTAH",
+                "locale": "fi_FI",
+                "name": "Break Sokos Hotel Tahko",
+                "address": {
+                    "city": "Kuopio",
+                    "postcode": "73310",
+                    "street": "Tahkonrinteenkatu 7"
+                },
+                "salesDescription": "Break Sokos Hotel Tahko sijaitsee matkailukeskuksen sydämessä lähellä laskettelukeskusta ja kaikkia Tahkon aktiviteetteja.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/2dyCMTxsqxtAPddTUMs3oH.webp",
+                "urlPath": "/hotellit/kuopio/break-sokos-hotel-tahko",
+                "notifications": [
+                    {
+                        "text": "16.12. alkaen hotellimme pysäköintipaikat ovat maksullisia. Talvikauden hinnat (1.12.–30.4.): 12 €/vrk 2 €/h",
+                        "link": {
+                            "url": "https://www.sokoshotels.fi/hotellit/kuopio/break-sokos-hotel-tahko/pysakointi",
+                            "text": "Tarkemmat tiedot pysäköinnistä ja maksutavoista löydät tästä."
+                        },
+                        "visible": true
+                    },
+                    {
+                        "text": "12.-14.3. vietetään Tahkolla legendaarista Business Slalom -viikonloppua!",
+                        "link": {
+                            "url": "https://www.tahko.com/tapahtuma/business-slalom/",
+                            "text": "Lue lisää"
+                        },
+                        "visible": true
+                    }
+                ]
+            },
+            {
+                "id": "PORVAA",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Vaakuna, Pori",
+                "address": {
+                    "city": "Pori",
+                    "postcode": "28100",
+                    "street": "Gallen-Kallelankatu 7"
+                },
+                "salesDescription": "Viihtyisä ja eläväinen Original Sokos Hotel Vaakuna sijaitsee Porin sykkeessä, tutkitusti onnellisten ihmisten kaupungissa.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/CJSXrWpQK7j9z5ZPp5c-jC.webp",
+                "urlPath": "/hotellit/pori/original-sokos-hotel-vaakuna",
+                "notifications": [
+                    {
+                        "text": "Porin Vaakunan laajennushankkeen suunnittelu käynnistyy.",
+                        "link": {
+                            "url": "https://www.sokoshotels.fi/fi/hotellit/pori/original-sokos-hotel-vaakuna/laajennus",
+                            "text": "Lue lisää"
+                        },
+                        "visible": false
+                    }
+                ]
+            },
+            {
+                "id": "KOTSEU",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Seurahuone, Kotka",
+                "address": {
+                    "city": "Kotka",
+                    "postcode": "48100",
+                    "street": "Keskuskatu 21"
+                },
+                "salesDescription": "Original Sokos Hotel Seurahuone on aktiivista elämää sykkivä saarihotelli Kotkan keskustassa.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/BqbUpvjwaMzBxqU-2ghbe2.webp",
+                "urlPath": "/hotellit/kotka/original-sokos-hotel-seurahuone",
+                "notifications": []
+            },
+            {
+                "id": "LAHSEU",
+                "locale": "fi_FI",
+                "name": "Solo Sokos Hotel Lahden Seurahuone",
+                "address": {
+                    "city": "Lahti",
+                    "postcode": "15110",
+                    "street": "Aleksanterinkatu 14"
+                },
+                "salesDescription": "Solo Sokos Hotel Lahden Seurahuoneella arkikin tuntuu juhlalta.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/06Xxooq9qi68KogaVCav7z.webp",
+                "urlPath": "/hotellit/lahti/solo-sokos-hotel-lahden-seurahuone",
+                "notifications": []
+            },
+            {
+                "id": "KOKKAA",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Kaarle",
+                "address": {
+                    "city": "Kokkola",
+                    "postcode": "67100",
+                    "street": "Kauppatori 4"
+                },
+                "salesDescription": "Original Sokos Hotel Kaarle toivottaa sinut tervetulleeksi kotikaupunkiinsa, yli 400-vuotiaaseen Kokkolaan.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/653ebfk1qDc87lpSUONXo6.webp",
+                "urlPath": "/hotellit/kokkola/original-sokos-hotel-kaarle",
+                "notifications": [
+                    {
+                        "text": "Uudistamme hotellin aulaa, pahoittelemme siitä aiheutuvaa häiriötä Original Sokos Hotel Kaarlessa.",
+                        "link": {
+                            "url": "",
+                            "text": ""
+                        },
+                        "visible": false
+                    },
+                    {
+                        "text": "Viikonloppuisin yökerhomme Calle Nightclub aiheuttaa meluhaittaa osaan huoneista.\nKeskiviikkona 11.3. Calle on poikkeuksellisesti auki klo 3.30 saakka.",
+                        "link": {
+                            "url": "",
+                            "text": ""
+                        },
+                        "visible": true
+                    }
+                ]
+            },
+            {
+                "id": "TAMTOR",
+                "locale": "fi_FI",
+                "name": "Solo Sokos Hotel Torni Tampere",
+                "address": {
+                    "city": "Tampere",
+                    "postcode": "33100",
+                    "street": "Ratapihankatu 43"
+                },
+                "salesDescription": "Solo Sokos Hotel Torni Tampere on kunnianosoitus tamperelaisille ilmiöille, legendoille ja tarinoille.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/4ygqNmS2qrk8fndZ1aUx06.webp",
+                "urlPath": "/hotellit/tampere/solo-sokos-hotel-torni-tampere",
+                "notifications": []
+            },
+            {
+                "id": "KOUTYK",
+                "locale": "fi_FI",
+                "name": "Break Sokos Hotel Tykkimäki Resort",
+                "address": {
+                    "city": "Kouvola",
+                    "postcode": "45200",
+                    "street": "Käyrälammentie 20"
+                },
+                "salesDescription": "Break Sokos Hotel Tykkimäki Resort on unohtumattomia hetkiä ja uniikkeja elämyksiä Kouvolassa.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/9Gu2VEsZKA0A77D-ajJZGd.webp",
+                "urlPath": "/hotellit/kouvola/break-sokos-hotel-tykkimaki-resort",
+                "notifications": [
+                    {
+                        "text": "Lammenranta Kitchen & Barin tiloja laajennetaan ja siitä voi aiheutua meluhaittaa ravintolan asiakkaille klo 8–16 välisenä aikana. Uudistus on valmis huhtikuun 2026 aikana. Kiitos ymmärryksestä!",
+                        "link": {
+                            "url": "",
+                            "text": ""
+                        },
+                        "visible": true
+                    }
+                ]
+            },
+            {
+                "id": "TURKUP",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Kupittaa",
+                "address": {
+                    "city": "Turku",
+                    "postcode": "20520",
+                    "street": "Joukahaisenkatu 6 (pääsisäänkäynti Tykistökatu 2)"
+                },
+                "salesDescription": "Original Sokos Hotel Kupittaa on erilaisten ihmisten kohtaamispaikka Turun kasvavalla keskusta-alueella, upean kaupunkipuiston läheisyydessä.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/CEQgmq6oaKrBf-KWdbKsbR.webp",
+                "urlPath": "/hotellit/turku/original-sokos-hotel-kupittaa",
+                "notifications": []
+            },
+            {
+                "id": "JOEKIM",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Kimmel",
+                "address": {
+                    "city": "Joensuu",
+                    "postcode": "80100",
+                    "street": "Itäranta 1"
+                },
+                "salesDescription": "Paljon paikallista. Sopivasti luksusta. Sinusta huolehtimista suurella sydämellä.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/CQSgLAkVaiP8ILdz8yE4GA.webp",
+                "urlPath": "/hotellit/joensuu/original-sokos-hotel-kimmel",
+                "notifications": [
+                    {
+                        "text": "Kimmel Span poikkeusajat",
+                        "link": {
+                            "url": "https://www.sokoshotels.fi/hotellit/joensuu/original-sokos-hotel-kimmel/kylpyla",
+                            "text": "Tarkemmat tiedot"
+                        },
+                        "visible": true
+                    },
+                    {
+                        "text": "Kontiolahdella järjestettävien ampumahiihdon maailmancupin johdosta, hotellillamme voi olla poikkeusjärjestelyjä 2-9.3.2026.",
+                        "link": {
+                            "url": "",
+                            "text": ""
+                        },
+                        "visible": true
+                    },
+                    {
+                        "text": "Hotellin ravintola Frans&Ellie on kiinni keskiviikkona 25.2. klo: 17-20, yksityistilaisuudesta johtuen.",
+                        "link": {
+                            "url": "https://www.raflaamo.fi/fi/ravintolat/joensuu/kaikki",
+                            "text": "Joensuun ravintolat"
+                        },
+                        "visible": true
+                    }
+                ]
+            },
+            {
+                "id": "ROVVAA",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Vaakuna, Rovaniemi",
+                "address": {
+                    "city": "Rovaniemi",
+                    "postcode": "96200",
+                    "street": "Koskikatu 4"
+                },
+                "salesDescription": "Original Sokos Hotel Vaakuna on aito lappilainen hotelli Joulupukin virallisessa kotikaupungissa.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/3khLpJHE4Js9GHY7Cz3CLG.webp",
+                "urlPath": "/hotellit/rovaniemi/original-sokos-hotel-vaakuna",
+                "notifications": [
+                    {
+                        "text": "POIKKEAVAT VARAUSEHDOT 1.12.25–31.3.26",
+                        "link": {
+                            "url": "https://www.sokoshotels.fi/hotellit/rovaniemi/original-sokos-hotel-vaakuna/poikkeavat-varausehdot",
+                            "text": "Lue lisää tästä"
+                        },
+                        "visible": true
+                    },
+                    {
+                        "text": "Yökerho Doris avoinna - aiheuttaa huoneisiin ääntä.",
+                        "link": {
+                            "url": "https://www.sokoshotels.fi/fi/hotellit/rovaniemi/original-sokos-hotel-vaakuna/yokerhosta-kantautuvat-aanet",
+                            "text": "Tarkista päivämäärät julkaisusta."
+                        },
+                        "visible": true
+                    }
+                ]
+            },
+            {
+                "id": "VANVAN",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Vantaa",
+                "address": {
+                    "city": "Vantaa",
+                    "postcode": "01300",
+                    "street": "Hertaksentie 2"
+                },
+                "salesDescription": "Original Sokos Hotel Vantaa on tapahtumien ja tarinoiden legendaarinen hotelli Tikkurilan sydämessä.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/2pFJV3F4aukAOj8faVhvEz.webp",
+                "urlPath": "/hotellit/vantaa/original-sokos-hotel-vantaa",
+                "notifications": []
+            },
+            {
+                "id": "ESPHEY",
+                "locale": "fi_FI",
+                "name": "Heymo 1 by Sokos Hotels",
+                "address": {
+                    "city": "Espoo",
+                    "postcode": "02150",
+                    "street": "Miestentie 5"
+                },
+                "salesDescription": "Heymo on edullinen uuden ajan design-hotelli.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/AJ0MwCu4aa6B8a0f9ZRKTE.webp",
+                "urlPath": "/hotellit/espoo/heymo-1-by-sokos-hotels",
+                "notifications": [
+                    {
+                        "text": "",
+                        "link": {
+                            "url": "",
+                            "text": ""
+                        },
+                        "visible": false
+                    }
+                ]
+            },
+            {
+                "id": "HIMHIM",
+                "locale": "fi_FI",
+                "name": "Break Sokos Hotel Himos",
+                "address": {
+                    "city": "Jämsä",
+                    "postcode": "42100",
+                    "street": "Golftie 1"
+                },
+                "salesDescription": "Break Sokos Hotel Himoksella vietät rennon ja touhukkaan reissun, joka tuo hymyn huulille – ”ihan kuin itsestään”.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/DVVt3fDsquYB0khsLyRhsK.webp",
+                "urlPath": "/hotellit/jamsa/break-sokos-hotel-himos",
+                "notifications": []
+            },
+            {
+                "id": "JYVALE",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Alexandra",
+                "address": {
+                    "city": "Jyväskylä",
+                    "postcode": "40100",
+                    "street": "Hannikaisenkatu 35"
+                },
+                "salesDescription": "Original Sokos Hotel Alexandra on vieraanvarainen ja tunnelmallinen levähdyspaikka keskellä Jyväskylää.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/5hW57R-2qig8vTO69SGa9g.webp",
+                "urlPath": "/hotellit/jyvaskyla/original-sokos-hotel-alexandra",
+                "notifications": []
+            },
+            {
+                "id": "TAVIRU",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Viru",
+                "address": {
+                    "city": "Tallinna",
+                    "postcode": "10111",
+                    "street": "Viru Väljak 4"
+                },
+                "salesDescription": "Original Sokos Hotel Viru on Tallinnan lukuisien tarinoiden keskustahotelli, jossa historia ja nykypäivä kohtaavat.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/3kRVCQjA4zMAHgXmRl1tFE.webp",
+                "urlPath": "/hotellit/tallinna/original-sokos-hotel-viru",
+                "notifications": []
+            },
+            {
+                "id": "SAVSEU",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Seurahuone, Savonlinna",
+                "address": {
+                    "city": "Savonlinna",
+                    "postcode": "57130",
+                    "street": "Kauppatori 4-6 (Apartments Tottinkatu 17 A ja B)"
+                },
+                "salesDescription": "Original Sokos Hotel Seurahuone on täysin uudistettu tapahtumatalo Saimaan rannalla.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/1piM6Ofy4AFANA2RVR02n4.webp",
+                "urlPath": "/hotellit/savonlinna/original-sokos-hotel-seurahuone",
+                "notifications": [
+                    {
+                        "text": "UUDISTAMME Hotelliamme uudistetaan 7.1.-28.2.2025 välisenä aikana.\nHotellikäytävien uudistustyöstä saattaa kuulua häiritsevää ääntä arkisin klo: 9 - 18 välillä.\nPahoittelemme mahdollista\nhäiriötä.\n",
+                        "link": {
+                            "url": "",
+                            "text": "Hotelliamme uudistetaan"
+                        },
+                        "visible": false
+                    },
+                    {
+                        "text": "UUTTA- Nyt asiakkaillemme varattavissa pilates- ja joogatunnit",
+                        "link": {
+                            "url": "https://www.sokoshotels.fi/hotellit/savonlinna/original-sokos-hotel-seurahuone/hyvinvointi",
+                            "text": "Joy & Move tunnit varattavissa asiakkaillemme"
+                        },
+                        "visible": false
+                    },
+                    {
+                        "text": "Meillä voi majoittuvat asiakkaat varata myös pysäköinnin ennakkoon. Hotellilla on kolme paikoitushallia. Pysäköintimaksu 16 €/vrk (Työmatkustajan S-Cardilla 13 €/vrk).\nSuosittelemme lämpimästi autopaikan varaamista etukäteen suoraan hotellista, puh. 010 764 2200 tai seurahuone.savonlinna@sokoshotels.fi\nSähköauton latauspaikkoja hotellin parkkihalleissa 1 ja 2 a yhteensä 8 kpl, paikat on varattu ainoastaan hotellivieraille hotellivierailun ajaksi.",
+                        "link": {
+                            "url": "https://www.sokoshotels.fi/hotellit/savonlinna/original-sokos-hotel-seurahuone/pysakointi",
+                            "text": "Pysäköinti Savonlinnan Seurahuoneella"
+                        },
+                        "visible": true
+                    }
+                ]
+            },
+            {
+                "id": "SAVTOT",
+                "locale": "fi_FI",
+                "name": "Hotel Tott",
+                "address": {
+                    "city": "Savonlinna",
+                    "postcode": "57130",
+                    "street": "Satamakatu 1"
+                },
+                "salesDescription": "Hotel Tott on Savonlinnan laivasatamassa, Kauppatorin läheisyydessä sijaitseva legendaarinen ja kodikas kesähotelli.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/CAp6kLR-K5J993ig4sEjQf.webp",
+                "urlPath": "/hotellit/savonlinna/hotel-tott",
+                "notifications": [
+                    {
+                        "text": "Hotel Tott on avoinna jälleen kesäkauden 18.6.-16.8.2026! Tervetuloa Tottiin niinku kottiiin!\n",
+                        "link": {
+                            "url": "",
+                            "text": ""
+                        },
+                        "visible": true
+                    }
+                ]
+            },
+            {
+                "id": "JOEVAA",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Vaakuna, Joensuu",
+                "address": {
+                    "city": "Joensuu",
+                    "postcode": "80100",
+                    "street": "Torikatu 20"
+                },
+                "salesDescription": "Kun haluat täyden palvelun hotellin kaupungin sykkeestä, on Original Sokos Hotel Vaakuna täydellinen valinta.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/EmtScHEmqGT8CWzpgzFmDv.webp",
+                "urlPath": "/hotellit/joensuu/original-sokos-hotel-vaakuna",
+                "notifications": [
+                    {
+                        "text": "Hotellimme perinteisellä puolella suoritetaan huoltohissin purku-/ ja rakennustöitä. Työt eivät vaikuta asiakkaiden kulkemiseen, mutta voivat aiheuttaa ajoittaista meluhaittaa rakenteita pitkin sekä sisäpihalla. Melua aiheuttavia töitä ei toteuteta ennen klo 8:00. Työt valmistuvat 16.2.2026 mennessä. Pahoittelemme tästä mahdollisesti aiheutuvaa haittaa.",
+                        "link": {
+                            "url": "",
+                            "text": ""
+                        },
+                        "visible": false
+                    },
+                    {
+                        "text": "Höyrysauna toistaiseksi epäkunnossa. Pahoittelemme aiheutunutta harmia!",
+                        "link": {
+                            "url": "",
+                            "text": ""
+                        },
+                        "visible": true
+                    }
+                ]
+            },
+            {
+                "id": "VUOVUO",
+                "locale": "fi_FI",
+                "name": "Break Sokos Hotel Vuokatti",
+                "address": {
+                    "city": "Sotkamo",
+                    "postcode": "88610",
+                    "street": "Kidekuja 2"
+                },
+                "salesDescription": "Break Sokos Hotel Vuokatti sijaitsee keskellä hurmaavaa kainuulaista luontoa.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/AqrilQPEaYQ8hZdZDXcSlV.webp",
+                "urlPath": "/hotellit/sotkamo/break-sokos-hotel-vuokatti",
+                "notifications": [
+                    {
+                        "text": "Saatavilla myös loma-asuntoja",
+                        "link": {
+                            "url": "https://www.sokoshotels.fi/fi/hotellit/sotkamo/break-sokos-hotel-vuokatti/majoitus-loma-asunnoissa",
+                            "text": "Lue lisää"
+                        },
+                        "visible": false
+                    },
+                    {
+                        "text": "Rakennustyöt ovat alkaneet Särkisen rannalla. Pahoittelemme mahdollista häiriötä.",
+                        "link": {
+                            "url": "",
+                            "text": ""
+                        },
+                        "visible": true
+                    },
+                    {
+                        "text": "Uusia huoneistoja Särkisen rannalle.",
+                        "link": {
+                            "url": "https://www.sokoshotels.fi/fi/hotellit/sotkamo/break-sokos-hotel-vuokatti/uusia-lomahuoneistoja-vuokattiin",
+                            "text": "Lue lisää"
+                        },
+                        "visible": true
+                    }
+                ]
+            },
+            {
+                "id": "VAAVAA",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Vaakuna, Vaasa",
+                "address": {
+                    "city": "Vaasa",
+                    "postcode": "65100",
+                    "street": "Kauppakeskus Rewell 101"
+                },
+                "salesDescription": "Original Sokos Hotel Vaakuna on kodikas ja persoonallinen hotelli keskellä Vaasaa. Me teemme asioita suurella sydämellä, massasta erottuen.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/6_0Q-Aou4rWAWbIN6eA6Ad.webp",
+                "urlPath": "/hotellit/vaasa/original-sokos-hotel-vaakuna",
+                "notifications": []
+            },
+            {
+                "id": "KOLKOL",
+                "locale": "fi_FI",
+                "name": "Break Sokos Hotel Koli",
+                "address": {
+                    "city": "Lieksa",
+                    "postcode": "83960",
+                    "street": "Ylä-Kolintie 39"
+                },
+                "salesDescription": "Break Sokos Hotel Koli tarjoaa elämyksiä nautiskelijoille Kolin huipulla ainutlaatuisessa maisemassa.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/4HvMg4WrazVA8I94vJiWUQ.webp",
+                "urlPath": "/hotellit/lieksa/break-sokos-hotel-koli",
+                "notifications": []
+            },
+            {
+                "id": "IISKOL",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Koljonvirta",
+                "address": {
+                    "city": "Iisalmi",
+                    "postcode": "74100",
+                    "street": "Louhenkatu 4"
+                },
+                "salesDescription": "Original Sokos Hotel Koljonvirta on ihastuttava pikkuhotelli Iisalmen keskustassa, aivan kuin kotiin tulisi.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/5Ski5r8CaACA8qi266iDmB.webp",
+                "urlPath": "/hotellit/iisalmi/original-sokos-hotel-koljonvirta",
+                "notifications": [
+                    {
+                        "text": "Keskeinen sijaintimme kaupungin sydämessä tuo Iisalmen elämän ja tunnelman aivan ovelle – ja sen myötä myös kaupungin äänet kuuluvat huoneisiin päivittäin.",
+                        "link": {
+                            "url": "",
+                            "text": ""
+                        },
+                        "visible": true
+                    }
+                ]
+            },
+            {
+                "id": "HMLVAA",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Vaakuna, Hämeenlinna",
+                "address": {
+                    "city": "Hämeenlinna",
+                    "postcode": "13200",
+                    "street": "Possentie 7"
+                },
+                "salesDescription": "Original Sokos Hotel Vaakuna on aidosti rento, onnellisten ihmisten hotelli Vanajaveden rannalla.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/1AGuHAzDKU09eXVhEfJGPW.webp",
+                "urlPath": "/hotellit/hameenlinna/original-sokos-hotel-vaakuna",
+                "notifications": []
+            },
+            {
+                "id": "SEILAK",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Lakeus",
+                "address": {
+                    "city": "Seinäjoki",
+                    "postcode": "60100",
+                    "street": "Torikatu 2"
+                },
+                "salesDescription": "Original Sokos Hotel Lakeus tarjoaa pohjalaista vieraanvaraisuutta ylpeydellä.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/3UAc34NFKUaBn9dEfIP8sj.webp",
+                "urlPath": "/hotellit/seinajoki/original-sokos-hotel-lakeus",
+                "notifications": []
+            },
+            {
+                "id": "TURSEU",
+                "locale": "fi_FI",
+                "name": "Solo Sokos Hotel Turun Seurahuone",
+                "address": {
+                    "city": "Turku",
+                    "postcode": "20100",
+                    "street": "Humalistonkatu 2"
+                },
+                "salesDescription": "Uniikki Solo Sokos Hotel Turun Seurahuone on aistikas ja eläväinen boutiquehotelli, todellinen helmi Turun keskustassa.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/0NdSDptM4xhBDIkqxWhMY0.webp",
+                "urlPath": "/hotellit/turku/solo-sokos-hotel-turun-seurahuone",
+                "notifications": [
+                    {
+                        "text": "Uudistuksia tiloissamme. Ravintolamme Gunnar Eatery& Bar:n baari ja loungetilat saavat uuden upean ilmeen kevään 2026 aikana. Työstä ei aiheudu häiriötä huoneisiimme, mutta vaikuttaa hetkellisesti asiointiin kauniin boutique hotellimme käytävillä. Pahoittelemme tästä mahdollisesti aiheutuvaa häiriötä. \nLisätietoa asiasta saat hotellimme vastaanotosta: seurahuone.turku@sokoshotels.fi\n \n",
+                        "link": {
+                            "url": "",
+                            "text": ""
+                        },
+                        "visible": true
+                    }
+                ]
+            },
+            {
+                "id": "KOLKYL",
+                "locale": "fi_FI",
+                "name": "Break Sokos Hotel Koli Kylä",
+                "address": {
+                    "city": "Lieksa",
+                    "postcode": "83960",
+                    "street": "Kolintie 94 B"
+                },
+                "salesDescription": "Break Sokos Hotel Koli Kylä tarjoaa energiaa ja aktiviteetteja Kolin kansallispuiston juurella.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/7pYQ9Jsc443Bgoi24-o28v.webp",
+                "urlPath": "/hotellit/lieksa/break-sokos-hotel-koli-kyla",
+                "notifications": []
+            },
+            {
+                "id": "KUOPUI",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Puijonsarvi",
+                "address": {
+                    "city": "Kuopio",
+                    "postcode": "70100",
+                    "street": "Minna Canthin katu 16"
+                },
+                "salesDescription": "Original Sokos Hotel Puijonsarvi Kuopion torin ja sataman läheisyydessä tuo savolaisen ilon ja elon osaksi hotellivierailuasi.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/B71dm_H1Kb79D6Q-4CFQOb.webp",
+                "urlPath": "/hotellit/kuopio/original-sokos-hotel-puijonsarvi",
+                "notifications": [
+                    {
+                        "text": "Puijonsarvi uudistuu! Uudistamme jugend-osan huoneita helmikuun alusta alkaen. Uudistus valmistuu huhtikuun aikana. Uudistuksen ajan majoituskäytössä ovat normaalisti päärakennus, sekä aamiaissalin yläpuolella sijaitseva Maaherrankadun siipi. Uudistuksella ei ole vaikutuksia hotellin muihin palveluihin.",
+                        "link": {
+                            "url": "https://www.sokoshotels.fi/hotellit/kuopio/original-sokos-hotel-puijonsarvi/huoneuudistus-2026",
+                            "text": "Lisätietoja"
+                        },
+                        "visible": true
+                    }
+                ]
+            },
+            {
+                "id": "SEIVAA",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Vaakuna, Seinäjoki",
+                "address": {
+                    "city": "Seinäjoki",
+                    "postcode": "60100",
+                    "street": "Kauppatori 3"
+                },
+                "salesDescription": "Original Sokos Hotel Vaakuna on vieraanvarainen hotelli keskellä kaupunkia juuri sinulle.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/E50vCV7raMJ9XZRj6g7hBN.webp",
+                "urlPath": "/hotellit/seinajoki/original-sokos-hotel-vaakuna",
+                "notifications": []
+            },
+            {
+                "id": "LAPLAP",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Lappee",
+                "address": {
+                    "city": "Lappeenranta",
+                    "postcode": "53100",
+                    "street": "Brahenkatu 1"
+                },
+                "salesDescription": "Original Sokos Hotel Lappee on iloinen kohtaamispaikka kauppakeskuksen sydämessä, kivenheiton päässä Saimaasta.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/3mvEe_XQ4ZT9DvKuVEpoY7.webp",
+                "urlPath": "/hotellit/lappeenranta/original-sokos-hotel-lappee",
+                "notifications": []
+            },
+            {
+                "id": "KOUVAA",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Vaakuna, Kouvola",
+                "address": {
+                    "city": "Kouvola",
+                    "postcode": "45100",
+                    "street": "Hovioikeudenkatu 2"
+                },
+                "salesDescription": "Original Sokos Hotel Vaakuna on kaupungin vaaleanpunainen klassikkohotelli, joka hurmaa asiakkaansa palvelullaan.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/BnH6Vf4EaIj8Ont-cQH3Cj.webp",
+                "urlPath": "/hotellit/kouvola/original-sokos-hotel-vaakuna",
+                "notifications": []
+            },
+            {
+                "id": "NURSPA",
+                "locale": "fi_FI",
+                "name": "Break Sokos Hotel Bomba",
+                "address": {
+                    "city": "Nurmes",
+                    "postcode": "75500",
+                    "street": "Tuulentie 10"
+                },
+                "salesDescription": "Break Sokos Hotel Bomba tarjoaa rauhaa ja ​aktiviteetteja nykykarjalaisessa hengessä kauniin Pielisen rannalla.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/8AYp3hcAK_2A75rY9Okze9.webp",
+                "urlPath": "/hotellit/nurmes/break-sokos-hotel-bomba",
+                "notifications": [
+                    {
+                        "text": "TULOSSA BOMBALLE TOUKOKUUSSA VIIKOILLA 19-20/26? Kylpylä Spa Bomba suljettu vuosihuollon takia 4.-12.5.2026. Lisäksi keskiviikkona 13.5. avaamme poikkeuksellisesti vasta klo 16. \nMyös hotellin iltasaunat peruttu. Hotelli ja Cafe & Ristorante Buolu palvelevat normaalisti. Tervetuloa!",
+                        "link": {
+                            "url": "",
+                            "text": ""
+                        },
+                        "visible": true
+                    },
+                    {
+                        "text": "PÄÄSIÄISENÄ BOMBALLE? \nPääsiäisen kolmen vuorokauden saat varattua, kun valitset kolmevuorokautta tulopäiväksi torstain 2.4. tai perjantain 3.4. sekä lisäät varauskoodiksi: pääsiäisloma .\n",
+                        "link": {
+                            "url": "https://www.sokoshotels.fi/hotellit/nurmes/break-sokos-hotel-bomba/paasiainen-bomballa",
+                            "text": "Lue lisää ja varaa pääsiäisloma!"
+                        },
+                        "visible": true
+                    }
+                ]
+            },
+            {
+                "id": "TAMILV",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Ilves",
+                "address": {
+                    "city": "Tampere",
+                    "postcode": "33100",
+                    "street": "Hatanpään Valtatie 1"
+                },
+                "salesDescription": "Original Sokos Hotel Ilves on Tampereen tapahtumien keskipiste upeissa Tammerkosken maisemissa.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/67YeiGapaUS83Iao-1hmJK.webp",
+                "urlPath": "/hotellit/tampere/original-sokos-hotel-ilves",
+                "notifications": []
+            },
+            {
+                "id": "LEVLEV",
+                "locale": "fi_FI",
+                "name": "Break Sokos Hotel Levi",
+                "address": {
+                    "city": "Kittilä",
+                    "postcode": "99130",
+                    "street": "Tähtitie 5"
+                },
+                "salesDescription": "Break Sokos Hotel Levi on virkistävä tauko arkeesi, keskellä Levin monipuolista palvelu- ja aktiviteettitarjontaa.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/4otCPe9jazl9H3rBt2Pav9.webp",
+                "urlPath": "/hotellit/kittila/break-sokos-hotel-levi",
+                "notifications": [
+                    {
+                        "text": "Poikkeavat varausehdot ajalle 1.12.25–31.3.26",
+                        "link": {
+                            "url": "https://www.sokoshotels.fi/fi/hotellit/kittila/break-sokos-hotel-levi/poikkeavat-varausehdot",
+                            "text": "Lue lisää tästä"
+                        },
+                        "visible": true
+                    },
+                    {
+                        "text": "Käynnissä olevat huoltotyöt",
+                        "link": {
+                            "url": "https://www.sokoshotels.fi/hotellit/kittila/break-sokos-hotel-levi/kaynnissa-olevat-huoltotyot",
+                            "text": "Lue lisää tästä"
+                        },
+                        "visible": false
+                    }
+                ]
+            },
+            {
+                "id": "VANFLA",
+                "locale": "fi_FI",
+                "name": "Break Sokos Hotel Flamingo",
+                "address": {
+                    "city": "Vantaa",
+                    "postcode": "01510",
+                    "street": "Tasetie 8"
+                },
+                "salesDescription": "Break Sokos Hotel Flamingo on elämyksellinen hotelli Pohjoismaiden suurimman viihdekeskuksen yhteydessä.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/DjttYCcMaYR9RQeiwVw_TF.webp",
+                "urlPath": "/hotellit/vantaa/break-sokos-hotel-flamingo",
+                "notifications": []
+            },
+            {
+                "id": "JYVPAV",
+                "locale": "fi_FI",
+                "name": "Solo Sokos Hotel Paviljonki",
+                "address": {
+                    "city": "Jyväskylä",
+                    "postcode": "40100",
+                    "street": "Lutakonaukio 10"
+                },
+                "salesDescription": "Hemmottelua kaikille aisteille. Solo Sokos Hotel Paviljonki on yhdistelmä tyylikkäitä tiloja, kaunista järvimaisemaa ja huolehtivaa palvelua.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/7TsHa2tTqKLANAngXdtYvN.webp",
+                "urlPath": "/hotellit/jyvaskyla/solo-sokos-hotel-paviljonki",
+                "notifications": []
+            },
+            {
+                "id": "OULARI",
+                "locale": "fi_FI",
+                "name": "Original Sokos Hotel Arina",
+                "address": {
+                    "city": "Oulu",
+                    "postcode": "90100",
+                    "street": "Pakkahuoneenkatu 16"
+                },
+                "salesDescription": "Original Sokos Hotel Arina on eläväinen kaupunkihotelli rotuaarilla Oulun paraatipaikalla.",
+                "listingImageURL": "https://cdn.s-cloud.fi/v1/assets/dam-id/51sfDYdmKD-8QEQMSktJTS.webp",
+                "urlPath": "/hotellit/oulu/original-sokos-hotel-arina",
+                "notifications": [
+                    {
+                        "text": "Kulku autolla hotellille tapahtuu Asemakadun ja Kirkkokadun kautta, sillä Isokatu on suljettuna vanhan Osuuspankin kohdalta purkutöiden vuoksi.",
+                        "link": {
+                            "url": "",
+                            "text": ""
+                        },
+                        "visible": true
+                    },
+                    {
+                        "text": "",
+                        "link": {
+                            "url": "",
+                            "text": ""
+                        },
+                        "visible": false
+                    }
+                ]
+            }
+        ]
+    }
+}
