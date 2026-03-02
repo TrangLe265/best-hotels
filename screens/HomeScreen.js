@@ -1,21 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import {
-  View, Text, TextInput, TouchableOpacity,
+  View, Text, TouchableOpacity,
   FlatList, Image, ScrollView, StyleSheet
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import hotelsData from '../data/hoteldata.json';
+import hotelsCategories from '../data/hoteltcategory.json'
 import { searchHotels } from '../utils/searchHotels';
 import { getNearbyHotels } from '../utils/getNearbyHotels';
 import HotelCardSmall from '../components/HotelCardSmall';
+import SearchBar from '../components/SearchBar';
+import { FontAwesome5 } from '@expo/vector-icons';
 
-const CITIES = ['Helsinki', 'Tampere', 'Turku', 'Oulu'];
-
-const CITY_IMAGES = {
-  Helsinki:  'https://picsum.photos/seed/city-hel/300/300',
-  Tampere:   'https://picsum.photos/seed/city-tam/300/300',
-  Turku:     'https://picsum.photos/seed/city-tur/300/300',
-  Oulu:      'https://picsum.photos/seed/city-oul/300/300',
+const CATEGORY_ICONS = {
+  original: 'briefcase',
+  solo:     'star',
+  break:    'umbrella-beach',
+  heymo:    'dollar-sign',
 };
 
 export default function HomeScreen({ navigation }) {
@@ -23,19 +24,21 @@ export default function HomeScreen({ navigation }) {
   const hotels = hotelsData.data.hotels;
 
   // Initialize with Helsinki hotels
-  const helsinkiHotels = hotels.filter(
-    h => h.address.city.toLowerCase() === 'helsinki'
-  );
+  const helsinkiHotels = hotels.filter( h => h.address.city.toLowerCase() === 'helsinki');
   const [nearbyHotels, setNearbyHotels] = useState(helsinkiHotels);
+  const [selectedCategory, setSelectedCategory] = useState(null);
 
   useEffect(() => {
+    /* Utilize getNearbyHotel functions to access user's location
+    Show nearby hotels according to the location
+     */
     getNearbyHotels(hotels)
       .then(({ hotels: nearby }) => {
         setNearbyHotels(nearby);
       })
       .catch((error) => {
         console.error('Error getting nearby hotels:', error);
-        // Fallback to Helsinki hotels on error
+        // Fallback to Helsinki hotels is there is an error
         setNearbyHotels(helsinkiHotels);
       });
   }, []);
@@ -44,24 +47,14 @@ export default function HomeScreen({ navigation }) {
 
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-
-      {/* ── Hero ── */}
+     
       <View style={styles.hero}>
-        <Text style={styles.heroTitle}>Find Your Favourite Hotel</Text>
-      </View>
+        <Text style={styles.heroTitle}>Löydä oma </Text>
+        <Text style={styles.heroTitle}>suosikkihotellisi</Text>
+      
+      <SearchBar value={search} onChangeText={setSearch} />
 
-      {/* ── Search Bar ── */}
-      <View style={styles.searchWrapper}>
-        <TextInput
-          style={styles.searchInput}
-          placeholder="Search hotels or cities..."
-          placeholderTextColor="E3E2DD"
-          value={search}
-          onChangeText={setSearch}
-        />
-      </View>
-
-      {/* ── Search Results Dropdown ── */}
+      {/* Search Results Dropdown */}
       {searchResults.length > 0 && (
         <View style={styles.dropdownContainer}>
           {searchResults.slice(0, 5).map((hotel, index) => (
@@ -86,32 +79,48 @@ export default function HomeScreen({ navigation }) {
           <Text style={styles.noResults}>No hotels match your search.</Text>
         </View>
       )}
+      </View>
 
-      {/* ── Browse by City ── */}
+      {/* Browse by Hotel Categories */}
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Browse by City</Text>
-        <View style={styles.citiesRow}>
-          {CITIES.map(city => (
+        <Text style={styles.sectionTitle}>Hotellikategoriats</Text>
+        <View style={styles.row}>
+          {Object.entries(hotelsCategories).map(([keyword, category]) => (
             <TouchableOpacity
-              key={city}
-              style={styles.cityButton}
-              activeOpacity={0.8}
-              onPress={() => navigation.navigate('CityHotels', { city })}
+              key={keyword}
+              style={[
+                styles.categoryButton,
+                selectedCategory === keyword && {backgroundColor: '#D64933'}
+              ]}
+              activeOpacity={0.85}
+              onPress={() => {
+                setSelectedCategory(keyword);
+                navigation.navigate('HotelType', { keyword, name: category.name });
+              }}
             >
-              <Image source={{ uri: CITY_IMAGES[city] }} style={styles.cityImage} />
-              <View style={styles.cityOverlay} />
-              <Text style={styles.cityLabel}>{city}</Text>
+              <FontAwesome5 
+                name={CATEGORY_ICONS[keyword]} 
+                size={20} 
+                color={selectedCategory === keyword ? '#fff' : '#0B3C49'} />
+              <Text style={[
+                  styles.categoryName,
+                  selectedCategory === keyword && { color: '#fff' }
+                ]}>
+                  {category.name}
+                </Text>
             </TouchableOpacity>
           ))}
         </View>
       </View>
 
-      {/* ── Nearby Hotels Carousel ── */}
+      {/* Hotels Carousel */}
       <View style={styles.section}>
         <View style={styles.rowBetween}>
           <Text style={styles.sectionTitle}>Staycation</Text>
+
+          {/* Link to lead to All Hotels screen */}
           <TouchableOpacity onPress={() => navigation.navigate('AllHotels')}>
-            <Text style={styles.link}>Other Destinations</Text>
+            <Text style={styles.link}>Muut kohteet</Text>
           </TouchableOpacity>
         </View>
 
@@ -128,52 +137,44 @@ export default function HomeScreen({ navigation }) {
         />
       </View>
 
+      {/** Adding some empty space in the bottom to make sure all elements are displayed properly */}      
       <View style={{ height: 30 }} />
     </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  container:       { flex: 1, backgroundColor: 'E3E2DD' },
+  container: { flex: 1, backgroundColor: '#e7f3fb' },
 
-  // Hero
-  hero:            { paddingTop: 100, paddingBottom: 40, paddingHorizontal: 24 },
-  heroTitle:       { color: '280000', fontSize: 28, fontWeight: '600', lineHeight: 38 },
+  hero: { paddingTop: 80, paddingHorizontal: 24 },
+  heroTitle: { color: '#280000', fontSize: 28, fontWeight: '500', lineHeight: 30},
 
-  // Search
-  searchWrapper:   {
-    marginHorizontal: 16, marginTop: -22,
-    backgroundColor: '#fff', borderRadius: 50,
-    elevation: 6, shadowColor: '#000', shadowOpacity: 0.12,
-    shadowRadius: 10, shadowOffset: { width: 0, height: 3 },
-  },
-  searchInput:     { paddingHorizontal: 16, paddingVertical: 14, fontSize: 15, color: '#333',   borderRadius: 50 },
-
-  // Dropdown
   dropdownContainer: {
-    marginHorizontal: 16, backgroundColor: '280000',
+    backgroundColor: '#fff',
+    borderColor: '#D64933', borderWidth: 1,
     borderRadius: 30, elevation: 4,
     shadowColor: '#000', shadowOpacity: 0.08, shadowRadius: 6,
     marginTop: 4,
   },
   dropdownItem:    { paddingHorizontal: 16, paddingVertical: 12 },
-  dropdownDivider: { borderTopWidth: 1, borderTopColor: '280000' },
-  dropdownName:    { fontSize: 14, fontWeight: '600', color: 'D64933' },
-  dropdownCity:    { fontSize: 12, color: '280000', marginTop: 2 },
+  dropdownDivider: { borderTopWidth: 1, borderTopColor: '#D64933' },
+  dropdownName:    { fontSize: 16, fontWeight: '400', color: '#D64933' },
+  dropdownCity:    { fontSize: 12, color: '#280000', marginTop: 2 },
   noResults:       { padding: 16, color: '#999', textAlign: 'center' },
 
-  // Section
   section:         { marginTop: 28 },
-  sectionTitle:    { fontSize: 22, fontWeight: '600', color: '280000', paddingHorizontal: 16, marginBottom: 14 },
-  rowBetween:      { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 }, 
-  link:         { color: '280000', fontWeight: '400', fontSize: 15, marginRight: 16 },
+  sectionTitle:    { fontSize: 22, fontWeight: '500', color: '#280000', paddingHorizontal: 16, marginBottom: 10 },
+  rowBetween:      { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 5 }, 
+  link:         { color: '#280000', fontWeight: '300', fontSize: 18, marginRight: 16 , marginBottom: 10 },
 
-  // Cities
-  citiesRow:       { flexDirection: 'row', paddingHorizontal: 16, gap: 8 },
-  cityButton:      { flex: 1, height: 84, borderRadius: 12, overflow: 'hidden', justifyContent: 'flex-end' },
-  cityImage:       { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 },
-  cityOverlay:     { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.38)' },
-  cityLabel:       { color: '#fff', fontSize: 11, fontWeight: '800', textAlign: 'center', padding: 7 },
+  row:       { flexDirection: 'row', paddingHorizontal: 16, justifyContent: 'space-between'},
+  categoryButton:  {
+    flexDirection: 'horizontal',justifyContent: 'space-between', alignItems: 'center', height: 85, width: 85, borderRadius: 20, overflow: 'hidden',
+    justifyContent: 'center', alignItems: 'center', gap: 10,
+    backgroundColor: '#fff', shadowColor: '#000',
+    shadowOpacity: 0.12, shadowRadius: 10, shadowOffset: { width: 0, height: 3 },
+  },
+  categoryName:  { color: '#0B3C49', fontSize: 15, fontWeight: '300', textAlign: 'center'},
 
   // Carousel
   carouselContent: { paddingLeft: 16, paddingRight: 8 },
