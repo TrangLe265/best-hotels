@@ -1,0 +1,22 @@
+{
+  "original": {
+    "id": 1,
+    "name": "Comfort",
+    "description": "Suunniteltu sujuviin ja tuottaviin työmatkoihin. Hotellit tarjoavat kokoustilat, luotettavan nopean internetyhteyden sekä keskeiset sijainnit lähellä yrityskeskittymiä ja tapahtumapaikkoja."
+  },
+  "solo": {
+    "id": 2,
+    "name": "Unique",
+    "description": "Persoonallisia hotelleja ainutlaatuisissa sijainneissa. Tunnettu omaleimaisesta arkkitehtuurista ja vahvasta design-ilmeestä, jotka luovat unohtumattoman tunnelman."
+  },
+  "break": {
+    "id": 3,
+    "name": "Retreat",
+    "description": "Täydellinen valinta irtiottoon ja hemmotteluun. Spa-elämykset, uima-altaat ja monipuoliset vapaa-ajan palvelut tarjoavat puitteet rentoutumiseen perheen tai ystävien kanssa."
+  },
+  "heymo": {
+    "id": 4,
+    "name": "Value",
+    "description": "Moderni ja vaivaton hotellielämys, jossa korostuvat joustavuus, digitaaliset palvelut ja erinomainen hinta-laatusuhde — kaikki mitä tarvitset ilman turhaa säätöä."
+  }
+}

@@ -3,600 +3,100 @@
     {
       "emoji": "🏛️",
       "id": 1,
-      "name": "Museum Tour",
-      "desc": "Explore local history and art at nearby museums in Espoo."
+      "name": "Museokierros",
+      "desc": "Tutustu Espoon lähialueiden museoihin ja paikalliseen historiaan sekä taiteeseen."
     },
     {
       "emoji": "🛶",
       "id": 2,
-      "name": "Waterfront Walk",
-      "desc": "Enjoy a scenic coastal walk and parks around Espoo."
+      "name": "Rantakävely",
+      "desc": "Nauti kauniista rannikkoreiteistä ja puistoista Espoossa."
     },
     {
       "emoji": "🧖",
       "id": 3,
-      "name": "Local Food Spot",
-      "desc": "Try popular local dishes at well-rated restaurants in Espoo."
+      "name": "Paikallinen ruokapaikka",
+      "desc": "Maista suosittuja paikallisia annoksia Espoon arvostetuissa ravintoloissa."
     }
   ],
   "Hämeenlinna": [
     {
       "emoji": "🏛️",
       "id": 1,
-      "name": "Castle Visit",
-      "desc": "Visit Hämeenlinna Castle and discover medieval Finnish history."
+      "name": "Linnavierailu",
+      "desc": "Vieraile Hämeen linnassa ja tutustu keskiaikaiseen Suomen historiaan."
     },
     {
       "emoji": "🛶",
       "id": 2,
-      "name": "Lakefront Stroll",
-      "desc": "Take a relaxing walk by the lakeside routes in Hämeenlinna."
+      "name": "Järvenrantakävely",
+      "desc": "Tee rentouttava kävely Hämeenlinnan kauniilla järvenrantareiteillä."
     },
     {
       "emoji": "🧖",
       "id": 3,
-      "name": "Market Square",
-      "desc": "Browse local products and cafés around Hämeenlinna market area."
+      "name": "Kauppatori",
+      "desc": "Tutustu paikallisiin tuotteisiin ja kahviloihin Hämeenlinnan torialueella."
     }
   ],
   "Helsinki": [
     {
       "emoji": "🏛️",
       "id": 1,
-      "name": "Museum Tour",
-      "desc": "Explore local history and art at nearby museums."
+      "name": "Museokierros",
+      "desc": "Tutustu lähialueiden museoihin ja paikalliseen historiaan sekä taiteeseen."
     },
     {
       "emoji": "🛶",
       "id": 2,
-      "name": "Harbour Walk",
-      "desc": "Stroll along Helsinki’s scenic harbour and seaside boulevards."
+      "name": "Satamakävely",
+      "desc": "Kävele Helsingin kauniilla satama-alueella ja merenrantabulevardeilla."
     },
     {
       "emoji": "🧖",
       "id": 3,
-      "name": "Design District",
-      "desc": "Discover boutiques, galleries, and Nordic design in the city center."
+      "name": "Designkortteli",
+      "desc": "Löydä putiikkeja, gallerioita ja pohjoismaista designia keskustassa."
     }
   ],
   "Iisalmi": [
     {
       "emoji": "🏛️",
       "id": 1,
-      "name": "Brewery Experience",
-      "desc": "Visit local breweries and taste regional flavors in Iisalmi."
+      "name": "Panimoelämys",
+      "desc": "Vieraile paikallisissa panimoissa ja maista alueellisia makuja Iisalmessa."
     },
     {
       "emoji": "🛶",
       "id": 2,
-      "name": "Nature Trail",
-      "desc": "Walk peaceful forest and lake trails around Iisalmi."
+      "name": "Luontopolku",
+      "desc": "Kävele rauhallisilla metsä- ja järvipoluilla Iisalmen ympäristössä."
     },
     {
       "emoji": "🧖",
       "id": 3,
-      "name": "Town Center Café",
-      "desc": "Relax in cozy cafés and explore small-town culture."
+      "name": "Keskustan kahvila",
+      "desc": "Rentoudu viihtyisissä kahviloissa ja tutustu pikkukaupungin tunnelmaan."
     }
   ],
   "Jämsä": [
     {
       "emoji": "🏛️",
       "id": 1,
-      "name": "Outdoor Adventure",
-      "desc": "Try hiking and seasonal outdoor activities near Jämsä."
+      "name": "Ulkoiluseikkailu",
+      "desc": "Kokeile patikointia ja kausittaisia ulkoaktiviteetteja Jämsän lähialueilla."
     },
     {
       "emoji": "🛶",
       "id": 2,
-      "name": "Lakeside Sauna",
-      "desc": "Experience a traditional Finnish sauna by the lake."
+      "name": "Järvisauna",
+      "desc": "Koe perinteinen suomalainen sauna järven rannalla."
     },
     {
       "emoji": "🧖",
       "id": 3,
-      "name": "Local Dining",
-      "desc": "Enjoy regional specialties in Jämsä’s local restaurants."
-    }
-  ],
-  "Joensuu": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Riverside Walk",
-      "desc": "Take a scenic walk along Joensuu’s riverfront."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Art & Culture",
-      "desc": "Visit galleries and cultural venues in central Joensuu."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Market Hall",
-      "desc": "Taste local produce and handcrafted goods at the market."
-    }
-  ],
-  "Jyväskylä": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Architecture Tour",
-      "desc": "Discover Alvar Aalto architecture and design landmarks."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Lake Cruise",
-      "desc": "Enjoy lake views and waterfront activities in Jyväskylä."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Sauna Evening",
-      "desc": "Unwind with a classic Finnish sauna experience."
-    }
-  ],
-  "Kajaani": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Castle Ruins",
-      "desc": "Explore the historic Kajaani castle ruins by the river."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "River Walk",
-      "desc": "Take a peaceful walk along the Kajaani river routes."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Local Cuisine",
-      "desc": "Taste regional Kainuu dishes at neighborhood restaurants."
-    }
-  ],
-  "Kittilä": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Northern Lights Hunt",
-      "desc": "Join an evening excursion to spot the aurora borealis."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Arctic Nature",
-      "desc": "Experience snowy landscapes and arctic outdoor trails."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Reindeer Farm Visit",
-      "desc": "Learn about Lapland traditions at a local reindeer farm."
-    }
-  ],
-  "Kokkola": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Old Town Walk",
-      "desc": "Explore the charming wooden-house district in Kokkola."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Seaside Visit",
-      "desc": "Enjoy fresh sea air and coastal views near Kokkola."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Culture Stop",
-      "desc": "Visit local museums and cultural sites in the city."
-    }
-  ],
-  "Kotka": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Maritime Museum",
-      "desc": "Discover Finland’s maritime history in Kotka."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Harbour Promenade",
-      "desc": "Walk along Kotka’s waterfront and public parks."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Garden Park",
-      "desc": "Relax in Kotka’s well-known landscaped city parks."
-    }
-  ],
-  "Kouvola": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "National Park Day",
-      "desc": "Take a day trip to nearby nature parks and trails."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Railway Heritage",
-      "desc": "Explore local railway and transport history."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "City Center Eats",
-      "desc": "Try local favorites in Kouvola’s dining spots."
-    }
-  ],
-  "Kuopio": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Puijo Tower",
-      "desc": "Enjoy panoramic city and lake views from Puijo Tower."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Market Square",
-      "desc": "Experience Kuopio’s lively market and local food stalls."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Lakefront Sauna",
-      "desc": "Relax in a traditional sauna by the water."
-    }
-  ],
-  "Lahti": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Ski Museum",
-      "desc": "Discover winter sports heritage in Lahti."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Harbour Area",
-      "desc": "Walk around the lakeside harbour and enjoy cafés."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Live Music Night",
-      "desc": "Catch local performances and events in Lahti."
-    }
-  ],
-  "Lappeenranta": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Fortress Visit",
-      "desc": "Explore the historic Lappeenranta Fortress area."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Saimaa Waterfront",
-      "desc": "Stroll by Lake Saimaa and scenic marina views."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Canal Cruise",
-      "desc": "Enjoy a relaxing boat cruise on local waterways."
-    }
-  ],
-  "Lieksa": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Koli Nature Trip",
-      "desc": "Visit nearby Koli landscapes and hiking routes."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Lake Pielinen Views",
-      "desc": "Take in beautiful lake views and peaceful shorelines."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Local Crafts",
-      "desc": "Browse handmade products and local artisan shops."
-    }
-  ],
-  "Mikkeli": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Military History",
-      "desc": "Explore Mikkeli’s notable wartime history museums."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Market Hall",
-      "desc": "Sample local ingredients and regional specialties."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Lakeside Cycling",
-      "desc": "Cycle scenic routes around nearby lakes."
-    }
-  ],
-  "Nurmes": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Bomba Area",
-      "desc": "Visit the Karelian-inspired Bomba cultural area."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Nature Walk",
-      "desc": "Enjoy calm forest trails and fresh countryside air."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Traditional Cuisine",
-      "desc": "Try Karelian-style dishes in local restaurants."
-    }
-  ],
-  "Oulu": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Market Square",
-      "desc": "Visit Oulu’s popular market square and waterfront."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Science Center",
-      "desc": "Explore family-friendly exhibits and tech culture."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Bike by the Sea",
-      "desc": "Ride Oulu’s famous cycling routes near the coast."
-    }
-  ],
-  "Pori": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Yyteri Beach",
-      "desc": "Take a trip to the sandy beaches of Yyteri."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Riverfront Walk",
-      "desc": "Walk along the Kokemäenjoki river in central Pori."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Jazz & Culture",
-      "desc": "Discover Pori’s vibrant music and cultural scene."
-    }
-  ],
-  "Rovaniemi": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Arctic Circle",
-      "desc": "Cross the Arctic Circle and explore Santa Claus Village."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Northern Lights",
-      "desc": "Join guided evening tours to chase the aurora."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Arktikum Museum",
-      "desc": "Learn about Arctic nature and northern culture."
-    }
-  ],
-  "Salo": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Nature Reserve",
-      "desc": "Discover peaceful outdoor areas and hiking paths near Salo."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Town Center Walk",
-      "desc": "Explore shops, cafés, and local life in central Salo."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Regional Food",
-      "desc": "Try local Finnish cuisine in neighborhood restaurants."
-    }
-  ],
-  "Savonlinna": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Olavinlinna Castle",
-      "desc": "Visit the famous medieval castle in Savonlinna."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Lake Saimaa Cruise",
-      "desc": "Take a boat tour across scenic Saimaa waters."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Opera & Events",
-      "desc": "Enjoy music events and festivals in summer season."
-    }
-  ],
-  "Seinäjoki": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Aalto Center",
-      "desc": "Explore architecture by Alvar Aalto in Seinäjoki."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Event Grounds",
-      "desc": "Check local events and festivals throughout the year."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Café Hopping",
-      "desc": "Discover relaxed cafés and local bakeries."
-    }
-  ],
-  "Sotkamo": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Vuokatti Trails",
-      "desc": "Enjoy outdoor trails and sports in the Vuokatti area."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Lake Activities",
-      "desc": "Try kayaking, swimming, or lakeside relaxation."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Sauna Retreat",
-      "desc": "Experience a cozy sauna after a day outdoors."
-    }
-  ],
-  "Tallinna": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Old Town Walk",
-      "desc": "Explore Tallinn’s UNESCO-listed medieval old town."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Seaside District",
-      "desc": "Visit trendy waterfront areas with cafés and galleries."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Historic Towers",
-      "desc": "Discover city walls and historic viewpoints."
-    }
-  ],
-  "Tampere": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Vapriikki Museum",
-      "desc": "Explore exhibitions at the Vapriikki museum complex."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Pyynikki Views",
-      "desc": "Walk scenic ridges and enjoy lake panoramas."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Public Sauna",
-      "desc": "Try Tampere’s famous public sauna culture."
-    }
-  ],
-  "Turku": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Turku Castle",
-      "desc": "Visit one of Finland’s most iconic historic castles."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Riverside Walk",
-      "desc": "Stroll along the Aura River and its restaurants."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Cathedral Quarter",
-      "desc": "Explore historic streets and landmarks near the cathedral."
-    }
-  ],
-  "Vaasa": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Archipelago Excursion",
-      "desc": "Take a trip to the nearby Kvarken archipelago."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Waterfront Promenade",
-      "desc": "Enjoy sea views and coastal walking paths in Vaasa."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Science & Nature",
-      "desc": "Visit local museums and family-friendly attractions."
-    }
-  ],
-  "Vantaa": [
-    {
-      "emoji": "🏛️",
-      "id": 1,
-      "name": "Aviation Museum",
-      "desc": "Learn about Finnish aviation history in Vantaa."
-    },
-    {
-      "emoji": "🛶",
-      "id": 2,
-      "name": "Nature Trails",
-      "desc": "Explore parks and river trails near the city."
-    },
-    {
-      "emoji": "🧖",
-      "id": 3,
-      "name": "Local Shopping",
-      "desc": "Discover shopping centers and food spots in Vantaa."
+      "name": "Paikallinen ruokailu",
+      "desc": "Nauti alueen erikoisuuksista Jämsän ravintoloissa."
     }
   ]
 }
