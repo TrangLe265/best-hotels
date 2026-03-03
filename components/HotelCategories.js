@@ -1,20 +1,21 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
-import hotelsCategories from '../data/hoteltcategory.json';
+import hotelsCategories from '../data/hoteltcategory.json'; // hotel categorization based on hotel brand name (Solo, Break, Heymo, ...)
+import { category_icons } from '../constants/hotels';
 
-const CATEGORY_ICONS = {
-  original: 'briefcase',
-  solo: 'star',
-  break: 'umbrella-beach',
-  heymo: 'dollar-sign',
-};
-
+// Display hotel categories: Comfort, Unique, Break, Heymo
 export default function HotelCategories({ selectedCategory, setSelectedCategory, navigation }) {
   return (
     <View style={styles.section}>
       <Text style={styles.sectionTitle}>Hotellikategoriat</Text>
+
+      {/* Row of all different hotel categories */}
       <View style={styles.categoryRow}>
+        {/* Map the hotel categories into clickable card:
+        * hotelsCategories is formatted under the form of (key: value) pair
+        * it uses keyword Solo, Break, Heymo, Original as key
+        */}
         {Object.entries(hotelsCategories).map(([keyword, category]) => {
           const isActive = selectedCategory === keyword;
           return (
@@ -24,11 +25,12 @@ export default function HotelCategories({ selectedCategory, setSelectedCategory,
               activeOpacity={0.85}
               onPress={() => {
                 setSelectedCategory(keyword);
+                //keyword is passed as props for navigation 
                 navigation.navigate('HotelType', { keyword, name: category.name });
               }}
             >
-              <FontAwesome5
-                name={CATEGORY_ICONS[keyword]}
+              <FontAwesome5 // Map each category to a pre-defined icon name
+                name={category_icons [keyword]}
                 size={20}
                 color={isActive ? '#fff' : '#0B3C49'}
               />

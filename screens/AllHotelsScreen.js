@@ -1,32 +1,35 @@
 import React, { useState } from 'react';
 import { View, FlatList, Text, StyleSheet } from 'react-native';
-import hotelsData from '../data/hoteldata.json';
+import {hotels} from '../constants/hotels';
 import { searchHotels } from '../utils/searchHotels';
 import HotelCardSmall from '../components/HotelCardSmall';
 import HotelsHeader from '../components/HotelsHeader';
-
-const hotels = hotelsData.data.hotels;
 
 export default function AllHotelsScreen({ navigation }) {
   const [search, setSearch] = useState('');
   const [sortOrder, setSortOrder] = useState(null); // 'asc' | 'desc' | null
 
+  // Trim userInput of any trailing space
+  // If there is no input then shows all hotels 
   const result = search.trim() ? searchHotels(hotels, search) : hotels;
 
-  const filtered = sortOrder
-    ? [...result].sort((a, b) =>
-        sortOrder === 'asc'
-          ? a.address.city.localeCompare(b.address.city)
-          : b.address.city.localeCompare(a.address.city)
-      )
-    : result;
+  // If sortOrder is set, the sort hotels by city
+  let filtered = result
+  if (sortOrder === 'asc') {
+    // using spread operator, create a shallow copy of result to display the sort result
+    filtered = [...result].sort((a,b) => (a.address.city.localeCompare(b.address.city)))
+  } else if (sortOrder === 'desc') {
+    filtered = [...result].sort((a,b) => (b.address.city.localeCompare(a.address.city)))
+  }
 
+  // render the search result label, show feedback text: '1 tulos haulle /search input/'
   const resultLabel = search.trim()
-    ? `${filtered.length} result${filtered.length !== 1 ? 's' : ''} for "${search.trim()}"`
+    ? `${filtered.length} tulos${filtered.length !== 1 ? 'ta' : ''} haulle "${search.trim()}"`
     : `${filtered.length} hotellia`;
 
   return (
     <View style={styles.container}>
+      {/* Seach Bar and Sort Button */}
       <HotelsHeader
         search={search}
         setSearch={setSearch}
@@ -34,15 +37,16 @@ export default function AllHotelsScreen({ navigation }) {
         setSortOrder={setSortOrder}
         resultCountLabel={resultLabel}
       />
-
-      <FlatList
+    
+    {/* Show the result as HotelCard */}
+    <FlatList
         data={filtered}
         keyExtractor={item => item.id}
         contentContainerStyle={styles.list}
         renderItem={({ item }) => (
           <HotelCardSmall hotel={item} navigation={navigation} fullWidth />
         )}
-        ListEmptyComponent={<Text style={styles.empty}>No hotels match your search.</Text>}
+        ListEmptyComponent={<Text style={styles.empty}>Yhtään hotellia ei löytynyt haullasi.</Text>}
         keyboardDismissMode="on-drag"
       />
     </View>

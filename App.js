@@ -25,18 +25,18 @@ export default function App() {
           name="HotelType"
           component={HotelTypeScreen}
           options={{
-              title: '',                 // no title
+              title: '',                 
               headerBackTitleVisible: false, 
-              headerTintColor: '#D64933', // back button color
+              headerTintColor: '#D64933', 
             }}
         />
         <Stack.Screen
           name="Hotel"
           component={HotelScreen}
           options={{
-            title: '',                 // no title
+            title: '',                
             headerBackTitleVisible: false, 
-            headerTintColor: '#D64933', // back button color
+            headerTintColor: '#D64933', 
           }}
         />
         <Stack.Screen

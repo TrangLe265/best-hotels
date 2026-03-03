@@ -2,27 +2,31 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, FlatList } from 'react-native';
 import HotelCardSmall from './HotelCardSmall';
 
-
+// Hotels Carousel
 export default function StaycationCarousel({nearbyHotels,navigation}) {
     return(
         <View style={styles.section}>
             <View style={styles.rowBetween}>
-            <Text style={styles.sectionTitle}>Staycation</Text>
-            <TouchableOpacity onPress={() => navigation.navigate('AllHotels')}>
-                <Text style={styles.link}>Muut kohteet</Text>
-            </TouchableOpacity>
+              {/* Section title */}
+              <Text style={styles.sectionTitle}>Staycation</Text>
+
+              {/* Nav-link that leads user to AllHotelsScrenn  */}
+              <TouchableOpacity onPress={() => navigation.navigate('AllHotels')}>
+                  <Text style={styles.link}>Muut kohteet</Text>
+              </TouchableOpacity>
             </View>
 
+            {/* Carousel of hotels with clickable item */}
             <FlatList
-            data={nearbyHotels}
-            keyExtractor={item => item.id}
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.carouselContent}
-            decelerationRate="fast"
-            renderItem={({ item }) => (
-                <HotelCardSmall hotel={item} navigation={navigation} />
-            )}
+              data={nearbyHotels}
+              keyExtractor={item => item.id}
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={styles.carouselContent}
+              decelerationRate="fast"
+              renderItem={({ item }) => (
+                  <HotelCardSmall hotel={item} navigation={navigation} />
+              )}
             />
         </View>
 )}

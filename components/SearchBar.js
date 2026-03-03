@@ -22,7 +22,6 @@ export default function SearchBar({
 const styles = StyleSheet.create({
   searchWrapper: {
     backgroundColor: '#fff',
-    borderRadius: 12,
     elevation: 6,
     shadowColor: '#000',
     shadowOpacity: 0.12,

@@ -1,11 +1,9 @@
 import * as Location from 'expo-location';
+import { helsinkiHotels } from '../constants/hotels';
 
 // Get user's location and display nearby hotels
 export async function getNearbyHotels(hotels) {
-  const helsinkiHotels = hotels.filter(
-    h => h.address.city.toLowerCase() === 'helsinki'
-  );
-
+  
   //If permission is not given, then show Helsinki Hotels by default
   const { status } = await Location.requestForegroundPermissionsAsync();
   if (status !== 'granted') {
@@ -24,5 +22,6 @@ export async function getNearbyHotels(hotels) {
     h => h.address.city.toLowerCase() === city.toLowerCase()
   );
 
+  //return a list of nearby hotels and the city that the user is in
   return { hotels: nearby, city };
 }

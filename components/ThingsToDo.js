@@ -1,12 +1,14 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
+//List of Things To Do in each city 
 export default function ThingsToDo({city, activities}){
     return (
         <View style={styles.section}>
                 <Text style={styles.sectionTitle}>Tekemistä kohteessa {city}</Text>
                 <View style={styles.divider} />
         
+                {/* Map out the activities into items */}
                 {activities.map((item) => (
                   <View key={item.id} style={styles.activityCard}>
                     <View style={styles.activityIcon}>
@@ -29,7 +31,6 @@ export default function ThingsToDo({city, activities}){
     )
 }
 const styles = StyleSheet.create({
-    noActivities: { fontSize: 12, color: '#999', marginTop: 10, paddingHorizontal: 20 },
     activityCard: {
         flexDirection: 'row',
         alignItems: 'flex-start',

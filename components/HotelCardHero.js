@@ -10,11 +10,12 @@ export default function HotelCardHero({ hotel, style }) {
     <View style={[styles.heroWrapper, style]}>
       <Image source={{ uri: hotel.listingImageURL }} style={styles.heroImage} />
 
-      {/* Create shadow so the text would pop */}
+      {/* Create shadow on the hero image so the text would pop */}
       <LinearGradient
         colors={['transparent', 'rgba(0,0,0,0.72)']}
         style={styles.heroGradient}
       />
+      
       <View style={styles.heroText}>
         <View style={styles.cityLabel}>
           <Text style={styles.cityLabelText}>{hotel.address.city}</Text>

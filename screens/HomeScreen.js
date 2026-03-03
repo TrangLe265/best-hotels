@@ -18,9 +18,11 @@ export default function HomeScreen({ navigation }) {
   const [nearbyHotels, setNearbyHotels] = useState(helsinkiHotels);
   const [selectedCategory, setSelectedCategory] = useState(null);
 
+  // Get user's location to display nearby hotels
   useEffect(() => {
     getNearbyHotels(hotels)
       .then(({ hotels: nearby }) => setNearbyHotels(nearby))
+      // if permission is not granted, then display Helsinki Hotels
       .catch(() => setNearbyHotels(helsinkiHotels));
   }, []);
 
@@ -28,11 +30,14 @@ export default function HomeScreen({ navigation }) {
 
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      {/* Hero + Search */}
+      {/* Hero + Search + Search Dropdown */}
       <View style={styles.hero}>
         <Text style={styles.heroTitle}>Löydä oma</Text>
         <Text style={styles.heroTitle}>suosikkihotellisi</Text>
+
         <SearchBar value={search} onChangeText={setSearch} />
+        
+        {/* If user inserts search input, then show the dropdown menu */}
         <SearchDropdown
           searchResults={searchResults}
           search={search}
@@ -51,12 +56,11 @@ export default function HomeScreen({ navigation }) {
       {/* Staycation Carousel */}
       <StaycationCarousel nearbyHotels={nearbyHotels} navigation={navigation} />
 
+      {/* Staycation Carousel */}
       <View style={styles.bottomSpacer} />
     </ScrollView>
   );
 }
-
-// ─── Styles ──────────────────────────────────────────────────────────────────
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#e7f3fb' },

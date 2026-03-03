@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, StyleSheet, ScrollView, View } from 'react-native';
-import hotelsData from '../data/hoteldata.json';
+import { hotels } from '../constants/hotels';
 import cityData from '../data/citydata.json';
 import HotelCardHero from '../components/HotelCardHero';
 import ThingsToDo from '../components/ThingsToDo';
@@ -9,7 +9,7 @@ import ThingsToDo from '../components/ThingsToDo';
 export default function HotelScreen({ route }) {
   // Get the hotel id from the route param and look for the right one to display
   const { id } = route.params;
-  const hotel = hotelsData.data.hotels.find(h => h.id === id);
+  const hotel = hotels.find(h => h.id === id);
 
   if (!hotel) {
     return <Text style={styles.empty}>Hotel not found.</Text>;

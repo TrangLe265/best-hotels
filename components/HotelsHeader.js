@@ -1,9 +1,10 @@
-// components/HotelsHeader.js
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import SearchBar from './SearchBar';
 
+// Header for AllHotelsScreen: search bar + default sort button
 export default function HotelsHeader({ search, setSearch, sortOrder, setSortOrder, resultCountLabel }) {
+  // define 2 default sort options: Destination asc and desc
   const sortOptions = [
     { key: 'asc', label: 'Kohteet A–Ö' },
     { key: 'desc', label: 'Kohteet Ö-A' },
@@ -13,6 +14,7 @@ export default function HotelsHeader({ search, setSearch, sortOrder, setSortOrde
     <View style={styles.header}>
       <SearchBar value={search} onChangeText={setSearch} />
 
+      {/** Map out the key-val pair of default sort options */}
       <View style={styles.sortRow}>
         {sortOptions.map(({ key, label }) => (
           <TouchableOpacity
@@ -28,6 +30,7 @@ export default function HotelsHeader({ search, setSearch, sortOrder, setSortOrde
         ))}
       </View>
 
+      {/** Display the result number */}
       <Text style={styles.resultCount}>{resultCountLabel}</Text>
     </View>
   );

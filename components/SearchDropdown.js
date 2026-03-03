@@ -1,13 +1,20 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
+// Search result dropdown 
 export default function SearchDropdown({ searchResults, search, navigation, setSearch }) {
+  //Display search result if there are hotels found based on the user's input
   if (searchResults.length > 0) {
     return (
       <View style={styles.dropdown}>
+      {/* The dropdown:
+         * Show 5 results at once 
+         * Take user to the hotel's own screen if they select a result from the drop down */}
         {searchResults.slice(0, 5).map((hotel, index) => (
           <TouchableOpacity
             key={hotel.id}
+            /* apply the same style to all items, 
+            apart from the 1st item, all other items have a divider underneath*/
             style={[styles.dropdownItem, index !== 0 && styles.dropdownDivider]}
             activeOpacity={0.7}
             onPress={() => {
