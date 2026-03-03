@@ -1,70 +1,67 @@
 import React, { useState, useEffect } from 'react';
-import {
-  View,
-  Text,
-  ScrollView,
-  StyleSheet,
-} from 'react-native';
+import { View, FlatList, Text, StyleSheet } from 'react-native';
+import {hotels} from '../constants/hotels';
 import { searchHotels } from '../utils/searchHotels';
-import { getNearbyHotels } from '../utils/getNearbyHotels';
-import SearchBar from '../components/SearchBar';
-import SearchDropdown from '../components/SearchDropdown';
-import HotelCategories from '../components/HotelCategories';
-import { hotels, helsinkiHotels } from '../constants/hotels';
-import StaycationCarousel from '../components/StaycationCarousel';
+import HotelCardSmall from '../components/HotelCardSmall';
+import HotelsHeader from '../components/HotelsHeader';
 
-export default function HomeScreen({ navigation }) {
+export default function AllHotelsScreen({ navigation, route }) {
   const [search, setSearch] = useState('');
-  const [nearbyHotels, setNearbyHotels] = useState(helsinkiHotels);
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [sortOrder, setSortOrder] = useState(null); // 'asc' | 'desc' | null
 
-  // Get user's location to display nearby hotels
+  //If a search param is passed (eg: from homepage), then apply that right away
   useEffect(() => {
-    getNearbyHotels(hotels)
-      .then(({ hotels: nearby }) => setNearbyHotels(nearby))
-      // if permission is not granted, then display Helsinki Hotels
-      .catch(() => setNearbyHotels(helsinkiHotels));
-  }, []);
+    if (route.params?.search) {
+      setSearch(route.params.search)
+    }
+  }, [route.params?.search]); 
 
-  const searchResults = searchHotels(hotels, search);
+  // Trim userInput of any trailing space
+  // If there is no input then shows all hotels 
+  const result = search.trim() ? searchHotels(hotels, search) : hotels;
+
+  // If sortOrder is set, the sort hotels by city
+  let filtered = result
+  if (sortOrder === 'asc') {
+    // using spread operator, create a shallow copy of result to display the sort result
+    filtered = [...result].sort((a,b) => (a.address.city.localeCompare(b.address.city)))
+  } else if (sortOrder === 'desc') {
+    filtered = [...result].sort((a,b) => (b.address.city.localeCompare(a.address.city)))
+  }
+
+  // render the search result label, show feedback text: '1 tulos haulle /search input/'
+  const resultLabel = search.trim()
+    ? `${filtered.length} tulos${filtered.length !== 1 ? 'ta' : ''} haulle "${search.trim()}"`
+    : `${filtered.length} hotellia`;
 
   return (
-    <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      {/* Hero + Search + Search Dropdown */}
-      <View style={styles.hero}>
-        <Text style={styles.heroTitle}>Löydä oma</Text>
-        <Text style={styles.heroTitle}>suosikkihotellisi</Text>
-
-        <SearchBar value={search} onChangeText={setSearch} />
-        
-        {/* If user inserts search input, then show the dropdown menu */}
-        <SearchDropdown
-          searchResults={searchResults}
-          search={search}
-          navigation={navigation}
-          setSearch={setSearch}
-        />
-      </View>
-
-      {/* Hotel Categories */}
-      <HotelCategories
-        selectedCategory={selectedCategory}
-        setSelectedCategory={setSelectedCategory}
-        navigation={navigation}
+    <View style={styles.container}>
+      {/* Seach Bar and Sort Button */}
+      <HotelsHeader
+        search={search}
+        setSearch={setSearch}
+        sortOrder={sortOrder}
+        setSortOrder={setSortOrder}
+        resultCountLabel={resultLabel}
       />
-
-      {/* Staycation Carousel */}
-      <StaycationCarousel nearbyHotels={nearbyHotels} navigation={navigation} />
-
-      {/* Staycation Carousel */}
-      <View style={styles.bottomSpacer} />
-    </ScrollView>
+    
+    {/* Show the result as HotelCard */}
+    <FlatList
+        data={filtered}
+        keyExtractor={item => item.id}
+        contentContainerStyle={styles.list}
+        renderItem={({ item }) => (
+          <HotelCardSmall hotel={item} navigation={navigation} fullWidth />
+        )}
+        ListEmptyComponent={<Text style={styles.empty}>Yhtään hotellia ei löytynyt haullasi.</Text>}
+        keyboardDismissMode="on-drag"
+      />
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#e7f3fb' },
-  hero: { paddingTop: 80, paddingHorizontal: 24 },
-  heroTitle: { color: '#280000', fontSize: 28, fontWeight: '500', lineHeight: 30 },
-  bottomSpacer: { height: 30 },
+  list: { paddingHorizontal: 16, paddingBottom: 24 },
+  empty: { textAlign: 'center', marginTop: 60, fontSize: 15, color: '#28000070' },
 });

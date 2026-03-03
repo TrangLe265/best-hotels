@@ -2,13 +2,15 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
 // Search result dropdown 
-export default function SearchDropdown({ searchResults, search, navigation, setSearch }) {
+export default function SearchDropdown({ searchResults = [], search, navigation, setSearch }) {
   //Display search result if there are hotels found based on the user's input
   if (searchResults.length > 0) {
+    const hasMorThanFive = searchResults.length > 5;
+
     return (
       <View style={styles.dropdown}>
-      {/* The dropdown:
-         * Show 5 results at once 
+
+      {/* Show the first 5 results 
          * Take user to the hotel's own screen if they select a result from the drop down */}
         {searchResults.slice(0, 5).map((hotel, index) => (
           <TouchableOpacity
@@ -26,6 +28,20 @@ export default function SearchDropdown({ searchResults, search, navigation, setS
             <Text style={styles.dropdownCity}>{hotel.address.city}</Text>
           </TouchableOpacity>
         ))}
+
+        {/* Show 'Lisää tuloksia' if there are more than 5 search results */}
+        {hasMorThanFive && (
+          <TouchableOpacity
+            style={[styles.dropdownItem, styles.dropdownDivider]}
+            activeOpacity={0.7}
+            onPress={() => {
+              navigation.navigate('AllHotels', { search });
+            }}
+          >
+            <Text style={styles.dropdownName}>See more</Text>
+          </TouchableOpacity>
+        )}
+
       </View>
     );
   }
